@@ -52,6 +52,7 @@ html, body {
 
 .products-info {
     width: 100%;
+    align-items: center;
     display: flex;
     color: #161616;
     border-bottom: 1px solid hsla(0, 2%, 64%, 0.3);
@@ -151,7 +152,8 @@ footer {
     line-height: 40px;
     font-size: 1.3em;
     font-weight: 600;
-    padding-left: 60px;
+    padding-left: 10%;
+    padding-right: 5%;
     cursor: pointer;
 }
 
@@ -203,6 +205,7 @@ footer {
     letter-spacing: 10px;
     color: #5CA720;
     cursor: pointer;
+    line-height: 50px;
     width: 50%;
     padding-left: 60px;
 }
@@ -215,6 +218,7 @@ footer {
     width: 50%;
     text-align: right;
     padding-right: 50px;
+    line-height: 50px;
 }
 
 .footer-bottom img {
@@ -283,10 +287,6 @@ footer {
         width: 100%;
     }
 
-    .footer-info li {
-        padding-left: 2%;
-    }
-
     .footer-form {
         width:100%;
         margin-top: 40px;
@@ -306,7 +306,6 @@ footer {
 
 @media (max-width:706px) {
 
-    
     .products-grid img {
         width: 220px;
         height: 200px;
@@ -330,19 +329,26 @@ footer {
 
 @media (max-width: 595px) {
 
+    .products-info h3 {
+        margin-left: 2%;
+    }
+
     .products-grid {
         display: block;
         padding: 0;
+        justify-content: center;
     }
 
     .box-grid {
         height: 350px;
-        width: 50%;
-        margin: 70px auto;
+        width: 100%;
+        text-align: center;
+        margin: 130px auto;
     }
 
-    .products-grid img {
-        width: 100%;
+    .box-grid img {
+        width: 290px;
+        height: 250px;
         transform: scale(1.2);
     }
 
@@ -352,12 +358,67 @@ footer {
         font-weight: bold;
     }
     
-    .box-grid p {
+    .purchase {
+        justify-content: center;
         font-size: 1.3em;
     }
 
     .purchase .btn-mobile {
         margin-top: 3px;
+    }
+}
+
+@media (max-width:450px) {
+    #logo-box p {
+        font-size: 0.7em;
+    }
+
+    .nav-box {
+        right: 8%;
+    }
+
+    .nav-box i {
+        font-size: 0.9em;
+    }
+
+    .products-info {
+        font-size: 0.8em;
+    }
+
+    .box-grid {
+        margin-bottom: 190px;
+    }
+
+    .box-grid img{
+        transform: scale(1);
+        margin-bottom: 20px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .nav-box {
+        
+    }
+
+    .box-grid {
+        width: 100%;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .purchase {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box-grid img {
+        width: 240px;
+        height: 230px;
     }
 }
 
